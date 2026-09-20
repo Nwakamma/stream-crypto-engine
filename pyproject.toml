@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stream-crypto-engine"
+version = "0.1.0"
+description = "Zero-disk in-memory streaming file encryption using Argon2id and AES-256-GCM"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Nwakamma Joseph" }
+]
+keywords = ["cryptography", "streaming", "aes-gcm", "argon2id", "security", "zero-disk"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Security :: Cryptography",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+# Third-party dependencies required by this library
+dependencies = [
+    "cryptography>=41.0.0",
+    "pynacl>=1.5.0",
+    "python-magic-bin>=0.4.14; platform_system == 'Windows'",
+    "python-magic>=0.4.27; platform_system != 'Windows'",
+]
+
+[project.urls]
+Homepage = "https://github.com/Nwakamma/stream-crypto-engine"
+
+[tool.setuptools.packages.find]
+where = ["src"]

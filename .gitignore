@@ -1,0 +1,18 @@
+# Virtual Environments
+.venv/
+venv/
+ENV/
+
+# Python Cache & Build Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+*.egg-info/
+restored_*
+.vscode/
+.idea/
+
+# Environment Variables
+.env
