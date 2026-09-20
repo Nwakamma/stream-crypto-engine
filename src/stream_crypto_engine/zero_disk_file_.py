@@ -31,8 +31,8 @@ class ZeroDiskFileCipher:
             raise ValueError("Password is required.")
         key = Argon2id(
             salt=salt,
-            lanes=2,
-            iterations=1,
+            lanes=4,
+            iterations=3,
             length=32,
             memory_cost=65536
         )

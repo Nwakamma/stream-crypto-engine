@@ -1,6 +1,7 @@
 # Virtual Environments
 .venv/
 venv/
+.venve/
 ENV/
 
 # Python Cache & Build Artifacts
@@ -16,3 +17,4 @@ restored_*
 
 # Environment Variables
 .env
+.pypirc
