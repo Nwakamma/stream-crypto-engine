@@ -20,9 +20,9 @@ class ModulaFileStreamEncryption:
         kdf = Argon2id(
             salt=salt,
             length=32,
-            lanes=2,
+            lanes=4,
             memory_cost=65536,  # 64 MB memory cost
-            iterations=1,
+            iterations=3,
         )
         return kdf.derive(self.password.encode("utf-8"))
 

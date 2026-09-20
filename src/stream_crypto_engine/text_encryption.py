@@ -31,8 +31,8 @@ class ModulaTextEncryption:
             salt=salt,
             length=32,
             memory_cost=65536,  # 64 MB RAM
-            lanes= 1,
-            iterations=1,
+            lanes= 4,
+            iterations=3,
         )
         return kdf.derive(self.password.encode('utf-8'))
 
@@ -96,8 +96,8 @@ class ModulaTextEncryption:
                 salt=salt,
                 length=32,
                 memory_cost=65536,
-                lanes=1,
-                iterations=1,
+                lanes=4,
+                iterations=3,
             )
             key = kdf.derive(password.encode('utf-8'))
             aesgcm = AESGCM(key)

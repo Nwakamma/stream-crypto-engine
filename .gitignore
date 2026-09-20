@@ -16,3 +16,4 @@ restored_*
 
 # Environment Variables
 .env
+.pypirc
